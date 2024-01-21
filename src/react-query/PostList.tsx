@@ -17,7 +17,6 @@ const PostList = () => {
       .get('https://jsonplaceholder.typicode.com/posts')
       .then((res) => setPosts(res.data))
       .catch((error) => setError(error));
-      .catch((error) => setError(error));
   }, []);
 
   if (error) return <p>{error}</p>;
